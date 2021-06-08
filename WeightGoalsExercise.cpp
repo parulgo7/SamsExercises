@@ -1,6 +1,7 @@
 #include <iostream>
 
 //a program exercise from Sams Teach Yourself C++
+//prompt: add a for each loop and other milestones to the weight goals program
 
 using namespace std;
 
