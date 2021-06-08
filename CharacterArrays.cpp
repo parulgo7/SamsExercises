@@ -27,13 +27,13 @@ int main()
 
     switch(option) {
         case 1:
-            cout << "Hola " << firstName << " " << lastName << "! Espero que estes bien! ";
+            cout << "Hola " << firstName << " " << lastName << "! Espero que estes bien! "; //Spanish greeting
             break;
         case 2:
-            cout << "Bonjour " << firstName << " " << lastName << "! J'espere que vous allez bien ";
+            cout << "Bonjour " << firstName << " " << lastName << "! J'espere que vous allez bien "; //French greeting
             break;
         case 3:
-            cout << "Hallo " << firstName << " " << lastName << "! Hoffe es geht dir gut ";
+            cout << "Hallo " << firstName << " " << lastName << "! Hoffe es geht dir gut "; //German greeting
             break;
         default:
             cout << "not at option!";
