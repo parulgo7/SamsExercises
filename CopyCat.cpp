@@ -3,7 +3,7 @@
 
 /*
 An original program by parulgo7
-A program that uses strncpy() and strcpy() to create a copycat
+A program that uses strncpy() to create a copycat
 
 */
 
