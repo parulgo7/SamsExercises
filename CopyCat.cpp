@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <cstring> //preprocessor directive used to access strncpy() method
 
 /*
 An original program by parulgo7
@@ -9,10 +9,8 @@ A program that uses strncpy() to create a copycat
 
 using namespace std;
 
-void instructions();
+void instructions(); //function prototypes 
 void copyCatPic();
-
-const int MAXCHAR = 100;
 
 int main()
 {
@@ -34,11 +32,13 @@ int main()
     return 0;
 }
 
+//display instructions to the user
 void instructions() {
     cout << "Welcome to the Copy Cat Program!";
     cout << " Type something and see your Copy Cat!" << endl;
 }
 
+//display ASCII text image of a cat
 void copyCatPic(){
     cout << "=^._.^=";
 
