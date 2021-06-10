@@ -31,26 +31,36 @@ Scooter::Scooter(int speed, int gas){ //constructor
     setGas(gas);
 }
 
-Scooter::~Scooter(){
+Scooter::~Scooter(){ //destructor
     //if this was not here, the compiler would have provided a default destructor (like this one)
 }
 
+//getSpeed()
+//@return speed
 int Scooter::getSpeed(){
     return speed;
 }
 
+//setSpeed()
+//@param desiredSpeed 
 void Scooter::setSpeed(int desiredSpeed){
     speed = desiredSpeed;
 }
 
+//getGas
+//@return gas
 int Scooter::getGas(){
     return gas;
 }
 
+//setGas()
+//@param desiredGas
 void Scooter::setGas(int desiredGas){
     gas = desiredGas;
 }
 
+//vroom()
+//additional comment: bool to indicate whether or not adding speed was successful based on gas amt
 bool Scooter::vroom(){
     int tempGas = getGas() - 2;
 
@@ -70,6 +80,7 @@ bool Scooter::vroom(){
     }
 }
 
+//brake()
 void Scooter::brake() {
     speed--;
     std::cout << "You braked! Your speed is now " << speed << std::endl;
@@ -78,7 +89,7 @@ void Scooter::brake() {
 
 
 
-
+//main function
 int main()
 {
     std::cout << "Welcome to your first Scooter! Press 1 to vroom, 2 to brake, and 3 to get gas" << std::endl;
@@ -89,7 +100,7 @@ int main()
 
     switch(userAns){
         case 1:
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 100; i++) { //100 chosen arbitarily
                 scootie.vroom();
 
                 std::cout << "To see the option list again, type 0" << std::endl;
@@ -102,7 +113,7 @@ int main()
             }
         std::cin >> userAns;
         case 2:
-            for (int i = 0; i< 100; i++) {
+            for (int i = 0; i< 100; i++) { //100 chosen arbitarily
                 scootie.brake();
 
                 std::cout << "To see the option list again, type 0" << std::endl;
@@ -115,7 +126,7 @@ int main()
             }
         std::cin >> userAns;
         case 3:
-            for (int i = 0; i<100; i++) {
+            for (int i = 0; i<100; i++) { //same as before
 
                 scootie.setGas(1);
 
